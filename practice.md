@@ -10,6 +10,8 @@
 - 朋友 B 开分支 `feature/garden`，也在**同一面左侧墙**开拱门，并在门前加花园；
 - 苦力怕开分支 `feature/boom`，在左墙放 TNT，把房子炸了。
 
+![](image/minecraft-git-multibranch.png)
+
 ### 合并多个分支：为什么会冲突？
 
 先合并 A：
@@ -46,3 +48,11 @@ git push origin --delete feature/boom      # 如果远程也创建了这个分�
 ```
 
 `git branch -D` 会强制删除尚未合并的分支，这里正是我们想要的效果。如果之前已经尝试合并并停在冲突中，先执行 `git merge --abort`，再删除分支。
+
+![](image/minecraft-git-conflict.png)
+
+## 总览
+
+如图所示：
+
+![](image/minecraft-git-graph.png)
